@@ -8,11 +8,11 @@
 
   outputs = { self, nixpkgs }:
     let
-      systems = ["x86_64-linux-gnu"];
+      system = "x86_64-linux";
     in
   {
     nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
-      inherit systems;
+      inherit system;
       modules = [
         ./configuration.nix
         ./base.nix
