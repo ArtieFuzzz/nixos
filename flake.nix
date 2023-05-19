@@ -6,12 +6,12 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, lib }:
     let
       systems = ["x86_64-linux-gnu"];
     in
   {
-    nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.iridium = lib.nixosSystem {
       inherit systems;
       modules = [
         ./configuration.nix
