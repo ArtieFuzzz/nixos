@@ -1,3 +1,4 @@
+{ pkgs, config, modulePaths, ... }:
 {
   networking = {
     nameservers = [ "1.1.1.1" "9.9.9.9" ];
@@ -19,7 +20,6 @@
     pkgs.git # Git
     pkgs.starship # Starship
     pkgs.zsh-autosuggestions
-    pkgs.zsh-syntax-highlighting
     pkgs.zoxide
     pkgs.btop
   ];
@@ -43,9 +43,7 @@
       cd = "z";
       top = "btop";
     };
-    enableCompletion = true;
     autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
   };
 
   users.extraUsers.nixos = {
