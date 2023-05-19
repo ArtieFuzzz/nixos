@@ -1,6 +1,8 @@
+# Main configuration
+
 { pkgs, config, modulePaths, ... }:
   {
-    imports [ ../base.nix ];
+    imports [ ./base.nix ];
 
     networking.hostName = "Aether"; # Astral, ToasterBox, Toaster, etc.
 

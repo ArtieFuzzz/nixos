@@ -11,7 +11,7 @@
     nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
       systems = "x86_64-linux";
       modules = [
-        ./profiles/iridium.nix
+        ./configuration.nix
       ];
     };
   };
