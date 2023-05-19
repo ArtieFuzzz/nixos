@@ -1,3 +1,4 @@
+{
   networking = {
     nameservers = [ "1.1.1.1" "9.9.9.9" ];
     hostName = "lab"; # Aether, Astral, ToasterBox, Toaster, etc.
@@ -50,3 +51,4 @@
   users.extraUsers.nixos = {
     shell = pkgs.zsh;
   };
+}
