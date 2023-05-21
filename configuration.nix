@@ -12,6 +12,9 @@
       pkgs.starship # Starship
       pkgs.zsh-autosuggestions
       pkgs.zoxide
+      # Comment these out if you want other Browsers / Terminals
+      pkgs.vivaldi
+      pkgs.alacritty
     ];
 
     environment.pathsToLink = [ "/share/zsh" ];
